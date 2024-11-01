@@ -1,11 +1,12 @@
 import numpy as np
 import torch
-from torchvision.utils import make_grid
+from torchvision.utils import make_grid #학습이미지를 격자형태로 구성, 시각화할때 사용
 from base import BaseTrainer
-from utils import inf_loop, MetricTracker
+from utils import inf_loop, MetricTracker 
 
+#이 파일의 기능 : 학습과 validation을 한 epoch씩 수행, 결과를 logging.
 
-class Trainer(BaseTrainer):
+class Trainer(BaseTrainer): #BaseTrainier module을 상속하고 있다.
     """
     Trainer class
     """
